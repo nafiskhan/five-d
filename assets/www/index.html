@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,
+          height=device-height,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0,
+          user-scalable=no" />     
+    <title>Index-FiveD</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script type="text/javascript" src="libs/cordova-2.2.0.js"></script>
+    <script type="text/javascript" src="libs/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="libs/mustache.js"></script>
+    <script type="text/javascript" src="libs/md5.js"></script>
+</head>
+<body>
+    <div id="header" class="header-style">
+        <a href="###" class="header-btn active" id="timeline-btn">时间线</a>
+        <a href="###" class="header-btn" id="logs-btn">日志</a>
+        <a href="###" class="header-btn" id="albums-btn">相册</a>
+        <a href="###" class="header-btn" id="friends-btn">好友</a>
+    </div>
+    <div id="header-placeholder"></div>
+    
+    <div id="main">
+        <div class="main-content" id="timeline">
+            <p class="loader-gif"><img src="img/ajax-loader.gif"/></p>    
+        </div>
+        <div class="main-content" id="albums">
+            <p class="loader-gif"><img src="img/ajax-loader.gif"/></p>    
+        </div>
+        <div class="main-content" id="friends">
+            <p class="loader-gif"><img src="img/ajax-loader.gif"/></p>
+        </div>
+        <div class="main-content" id="person">
+            <p class="loader-gif"><img src="img/ajax-loader.gif"/></p>   
+        </div>
+        <div class="main-content" id="logs">
+            <p class="loader-gif"><img src="img/ajax-loader.gif"/></p>   
+        </div>
+    </div>
+    
+    <div id="footer-placeholder"></div>
+    <div id="footer">
+        <a href="###" id="post-twitter-btn">发状态</a>
+        <a href="###" id="post-photo-btn">发照片</a>
+        <a href="###" class="header-btn" id="person-btn">About Me</a>
+        <a href="###" id="setting-btn">设置</a>
+    </div>
+    
+    <div id="options" class="layer">
+    	<div class="option"><a href="###" id="about-5d-btn">关于五次元</a></div>
+    	<div class="option"><a href="###" id="show-token-btn">显示令牌</a></div>
+    	<div class="option"><a href="logout.html" id="logout-btn">退出帐号</a></div>
+    	<div class="option"><a href="###" id="exit-btn">退出程序</a></div>
+    </div>
+    <div id="about" class="layer">
+        <table id="about-table">
+        	<tr>
+        		<td id="about-logo" class="dynamic-height">
+        		    <p style="font-size:1.4em;"><span style="font-size:3.5em;padding-right:2px;">5</span>次元</p>
+                    <p style="font-size:.9em; line-height:1.3em;">人人网客户端</p>
+        		</td>
+        	</tr>
+        </table>
+        <p id="about-author">何凯 作品</p>
+    </div>
+    <div id="post-status" class="dynamic-height post-module layer">
+        <div id="post-header" class="header-style post-header">
+            <a href="###" id="post-back" class="back-btn">返回</a>
+            <a href="###" id="post-title" class="post-title">发状态</a>
+            <a href="###" id="send-btn" class="send-btn">发送</a>        
+        </div>
+        <textarea class="post-content" id="post-content" rows="8"></textarea>
+        <div id="post-tools" class="post-tools">
+            <a href="###" >#</a>
+            <a href="###" >@</a>
+            <a href="###" >;-)</a>
+        </div>
+    </div>
+    <div id="post-photo" class="dynamic-height post-module layer">
+        <div id="post-photo-header" class="header-style post-header">
+            <a href="###" id="post-photo-back" class="back-btn">返回</a>
+            <a href="###" id="post-photo-title" class="post-title">发照片</a>
+            <a href="###" id="send-photo-btn" class="send-btn">发送</a>
+        </div>
+        <div id="post-photo-tools" class="post-tools">
+            <a href="###" id="capture-photo">立即拍摄</a>
+            <a href="###" id="choose-photo">从相册选择</a>
+        </div>
+        <textarea class="post-content" id="post-photo-text" rows="5"></textarea>
+        <img id="post-photo-img" src="img/default-photo.png" />
+    </div>
+    
+    <div id="extra-layer" class="dynamic-height post-module layer">
+        <div id="extra-layer-head" class="header-style">
+            <a href="###" id="extra-layer-back" class="back-btn">返回</a>
+            <a href="###" id="extra-layer-title" class="post-title"></a>
+        </div>
+        <div id="extra-layer-content"></div>
+    </div>
+    
+</body>
+</html>
+<script type="text/javascript" src="scripts/jstpl.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>

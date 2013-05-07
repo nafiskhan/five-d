@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">五次元</string>
+    <string name="first_name">5</string>
+    <string name="last_name">次元</string>
+    <color name="main_activity_bg">#33B6EA</color>
+    <color name="main_activity_font">#fff</color>
+    <string name="author_identification">何凯 作品</string>
+</resources>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>   
+    <title>Logout-FiveD</title>
+</head>
+<body>
+    <h1 id="feedback">正在退出……</h1>
+    <p><a href="login.html">登录</a> | <a id="exit-btn" href="###">退出</a></p>
+    <iframe style="display: none;" src="http://3g.renren.com/wlogout.do"></iframe>
+</body>
+</html>
+<script type="text/javascript" src="libs/cordova-2.2.0.js"></script>
+<script type="text/javascript">
+    localStorage.removeItem('uid');
+    localStorage.removeItem('accessToken');
+    document.getElementById('feedback').innerHTML = localStorage.getItem('accessToken')?'退出失败!':'退出成功!';
+    document.getElementById('exit-btn').addEventListener('click', function(){
+        navigator.app.exitApp();    
+    }, false);
+</script>
